@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="resources/css/style.css" />
@@ -21,7 +21,7 @@
           <img src="resources/img/logo.png" alt="Today I learned Logo" />
           <h1>Today I Learned</h1>
         </div>
-        <button>Share a fact</button>
+        <button class="btn btn-large">Share a fact</button>
       </header>
 
       <form class="fact-form">
@@ -39,15 +39,23 @@
           <option value="science">Science</option>
           <option value="finance">Finance</option>
         </select>
-        <button>Post</button>
+        <button class="btn btn-large">Post</button>
       </form>
 
       <main class="main">
         <aside>
           <ul>
-            <li><button>All</button></li>
-            <li><button>Technology</button></li>
-            <li><button>Science</button></li>
+            <li class="category">
+              <button class="btn btn-all-categories">All</button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category btn-technology">
+                Technology
+              </button>
+            </li>
+            <li class="category">
+              <button class="btn btn-category btn-science">Science</button>
+            </li>
           </ul>
         </aside>
 
@@ -65,9 +73,9 @@
               </p>
               <span class="tag technology">#technology#</span>
               <div class="vote-buttons">
-                <button>👍🏻 <strong>24</strong></button>
-                <button>🤯 <strong>9</strong></button>
-                <button>⛔️ <strong>4</strong></button>
+                <button>👍🏻 24</button>
+                <button>🤯 9</button>
+                <button>⛔️ 4</button>
               </div>
             </li>
             <li class="fact">
@@ -84,9 +92,9 @@
               </p>
               <span class="tag society">#society#</span>
               <div class="vote-buttons">
-                <button>👍🏻 <strong>11</strong></button>
-                <button>🤯 <strong>2</strong></button>
-                <button>⛔️ <strong>0</strong></button>
+                <button>👍🏻 11</button>
+                <button>🤯 2</button>
+                <button>⛔️ 0</button>
               </div>
             </li>
           </ul>
